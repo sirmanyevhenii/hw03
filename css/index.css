@@ -1,0 +1,138 @@
+
+/*general style*/
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+
+
+/*HEADER*/
+
+.top-nav {
+    padding: 1rem;
+}
+
+.logo__img {
+    width: 2rem;
+}
+
+.logo__text {
+    width: 3rem;
+}
+
+/*main title*/
+.caption {
+    display: inline-block;
+    margin: 0 0 0 auto;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-left: 3px solid #800000;
+}
+
+.caption__top {
+    text-transform: capitalize;
+}
+
+.caption__main {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+
+/*ABOUT*/
+
+.my-skills {
+    width: 1rem;
+    background-color: #800000;
+    border-radius: 50px;
+}
+
+
+
+
+
+/*CONTACT*/
+
+.social-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social-list__item {
+    width: 33%;   
+}
+
+.social-list__item--avatar {
+    width: 100%;
+}
+
+.social-list__link {
+    display: block;
+    margin: auto;
+}
+
+.social-list__icon {
+    display: block;
+    margin: auto;
+    width: 4rem;
+}
+
+/*main form*/
+
+.form {
+    width: 100%;
+}
+
+.form__title {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form__input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
+
+
+
+
+.maps {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
