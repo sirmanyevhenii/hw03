@@ -1,6 +1,15 @@
 
 /*general style*/
 
+@import url('https://fonts.googleapis.com/css?family=Nunito|Roboto');
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1920px;
+    font-family: 'Nunito', sans-serif;
+}
+
 a {
     text-decoration: none;
 }
@@ -15,38 +24,129 @@ li {
 }
 
 ul {
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    padding: 0;
 }
 
-.clearfix:after {
-  content: "";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
+
+/*GRID*/
+
+/*.grid {*/
+/*    display: grid;*/
+/*    grid-template-columns: 15% 70% 15%;*/
+/*    grid-template-rows: auto auto auto;*/
+/*    grid-auto-flow: row;*/
+/*}*/
+
+/*.main-header {*/
+/*    grid-column: 1 / 4;*/
+/*}*/
+
+/*.main-footer {*/
+/*    grid-column: 1 / 4;*/
+/*}*/
+
+
+/*@media screen and (max-width: 720px) {*/
+/*    .grid {*/
+/*        grid-template-columns: 1fr;*/
+/*    }*/
+/*}*/
+
 
 
 
 /*HEADER*/
 
-.top-nav {
+.main-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 5rem;
     padding: 1rem;
+    min-height: 98vh;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*logo & menu*/
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo__link {
+    display: block;
 }
 
 .logo__img {
+    display: inline-block;
     width: 2rem;
 }
 
+.logo__name {
+    display: inline-block;
+    margin: auto;
+}
+
 .logo__text {
-    width: 3rem;
+    display: block;
+    color: #800000;
+    text-transform: uppercase;
+}
+
+/*main menu*/
+
+.top-menu {
+    display: flex;
+    align-items: center;
+}
+
+.top-menu__item {
+    margin: auto 1rem;
+    width: 5rem;
+    text-align: center;
+}
+
+.top-menu__link {
+    display: block;
+    color: #800000;
+    text-transform: uppercase;
+}
+
+
+/*top title*/
+
+.top-title {
+    color: #800000;
+}
+
+
+
+/*ABOUT SECTION*/
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 5rem;
 }
 
 /*main title*/
+
+.main-title {
+    margin-bottom: 3rem;
+    width: 100%;
+}
+
 .caption {
     display: inline-block;
-    margin: 0 0 0 auto;
+    margin-left: 50%;
     padding: 0.5rem 0 0.5rem 1rem;
     border-left: 3px solid #800000;
 }
@@ -61,8 +161,22 @@ ul {
     text-align: left;
 }
 
+.avatar,
+.about-text,
+.about-skills {
+    width: 20rem;
+}
 
-/*ABOUT*/
+.avatar__foto {
+    width: 100%;
+}
+
+/*about text*/
+
+.about-text {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
 
 .my-skills {
     width: 1rem;
@@ -70,19 +184,52 @@ ul {
     border-radius: 50px;
 }
 
+/*about skills list*/
+
+.skills {
+    text-align: center;
+}
+
+.skills__artikle {
+    display: inline-block;
+    margin: 0 0 1rem 0;
+    width: 24%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.skills__img {
+    border-radius: 50px;
+    background-color: #800000;
+}
 
 
 
 
-/*CONTACT*/
+/*CONTACT SECTION*/
 
-.social-list {
+.contact {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.social-list {
+    position: relative;
+    padding: 2.5rem;
+    width: 20rem;
+    height: 20rem;
+    box-sizing: border-box;
+    border: 1px solid #800000;
+    border-radius: 50rem;
 }
 
 .social-list__item {
-    width: 33%;   
+    display: inline-block;
+    margin: auto;
+    width: 32%;
 }
 
 .social-list__item--avatar {
@@ -103,7 +250,7 @@ ul {
 /*main form*/
 
 .form {
-    width: 100%;
+    width: 25rem;
 }
 
 .form__title {
@@ -117,21 +264,32 @@ ul {
     width: 100%;
 }
 
+.feedback-form {
+    display: none;
+    width: 50%;
+}
 
 
-
+/*FOOTER*/
 
 
 .maps {
     width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
 }
 
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #A59A97;
+    box-sizing: border-box;
+}
 
-
-
-
-
-
+.license {
+    color: #800000;
+}
 
 
 
