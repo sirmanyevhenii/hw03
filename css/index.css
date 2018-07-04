@@ -66,7 +66,7 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 5rem;
+    align-content: space-between;
     padding: 1rem;
     min-height: 98vh;
     background-image: url(../img/header-bg.jpg);
@@ -102,6 +102,42 @@ ul {
     text-transform: uppercase;
 }
 
+/*toggl for menu*/
+
+.toggle-btn {
+	position: fixed;
+	z-index: 100;
+	right: 1rem;
+	padding: 0.75rem;
+	cursor: pointer;
+}
+
+.toggle-btn__line {
+	display: block;
+	margin-bottom: 0.375rem;
+	height: 3px;
+	width: 2rem;
+	background-color: #212121;
+	transition: all .4s ease;
+}
+
+.toggle-btn__line:last-child { 
+	margin-bottom: 0;
+}
+
+.toggle-btn__top--active {
+	transform: translateY(9px) rotateZ(135deg);
+	background-color: #d60202;
+}
+.toggle-btn__midle--active {
+	background-color: transparent;
+	transform: translateX(2rem);
+}
+.toggle-btn__bottom--active {
+	transform: translateY(-9px) rotateZ(-135deg);
+	background-color: #f6313f;
+}
+
 /*main menu*/
 
 .top-menu {
@@ -110,24 +146,70 @@ ul {
 }
 
 .top-menu__item {
-    margin: auto 1rem;
-    width: 5rem;
     text-align: center;
 }
 
 .top-menu__link {
     display: block;
+    padding: 0.5rem 1rem;
     color: #800000;
     text-transform: uppercase;
+}
+
+.top-menu--active {
+	position: fixed;
+	z-index: 2;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+.top-menu--active li {
+    width: 100%;
 }
 
 
 /*top title*/
 
 .top-title {
+    /*align-self: center;*/
+    width: 100%;
     color: #800000;
 }
 
+/*scroll*/
+
+.scroll {
+	width: 100%;
+}
+
+.scroll-wrap {
+	width: 1rem;
+	margin: 0 auto;
+}
+
+.scroll-icon {
+	opacity: 0.2;
+}
+
+.scroll-icon--2 {
+	opacity: 0.5;
+}
+
+.scroll-icon--3 {
+	opacity: 0.8;
+}
+
+
+
+/*MAIN CONTAINER*/
+
+.main {
+    padding: 5rem 10%;
+}
 
 
 /*ABOUT SECTION*/
@@ -167,6 +249,7 @@ ul {
 .avatar,
 .about-text,
 .about-skills {
+    padding: 1rem;
     width: 20rem;
 }
 
@@ -219,25 +302,112 @@ ul {
     margin-bottom: 5rem;
 }
 
-.social-list {
-    position: relative;
-    padding: 2.5rem;
+.social {
+    /*padding: 1rem;*/
     width: 20rem;
     height: 20rem;
+}
+
+.social-list {
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 290px;
+    height: 290px;
     box-sizing: border-box;
     border: 1px solid #800000;
     border-radius: 50rem;
 }
 
 .social-list__item {
+    position: absolute;
     display: inline-block;
     margin: auto;
     width: 32%;
 }
 
-.social-list__item--avatar {
-    width: 100%;
+.social-list__item:after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 1rem;
+    width: 2px;
+    background-color: #800000;
 }
+
+.item--gmail {
+    top: 23%;
+    left: 7%;
+}
+
+.item--gmail:after {
+    left: 85px;
+    bottom: 5px;
+    transform: rotate(135deg);
+}
+
+.item--facebook {
+    top: 7%;
+    left: calc(50% - 46px);
+}
+
+.item--facebook:after {
+    bottom: -20px;
+    left: 45px;
+}
+
+.item--github {
+    top: 23%;
+    right: 7%;
+}
+
+.item--github:after {
+    right: 85px;
+    bottom: 5px;
+    transform: rotate(-135deg);
+}
+
+.item--avatar {
+    top: calc(50% - 32px);
+    left: calc(50% - 46px);
+}
+
+.item--avatar:after {
+    display: none;
+}
+
+.item--instagram {
+    bottom: 23%;
+    left: 7%;
+}
+
+.item--instagram:after {
+    left: 85px;
+    top: 5px;
+    transform: rotate(-135deg);
+}
+
+.item--linkedin {
+    bottom: 7%;
+    left: calc(50% - 46px);
+}
+
+.item--linkedin:after {
+    top: -20px;
+    left: 45px;
+}
+
+.item--skype {
+    bottom: 23%;
+    right: 7%;
+}
+
+.item--skype:after {
+    right: 85px;
+    top: 5px;
+    transform: rotate(135deg);
+}
+
 
 .social-list__link {
     display: block;
@@ -253,6 +423,7 @@ ul {
 /*main form*/
 
 .form {
+    padding: 1rem;
     width: 25rem;
 }
 
@@ -294,6 +465,9 @@ ul {
     color: #800000;
 }
 
+.license span {
+    
+}
 
 
 

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yevhenii Sirman</title>
 
-    <!-- Favikon -->
+    <!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
@@ -25,6 +25,8 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Style -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
 
 </head>
@@ -42,6 +44,11 @@
                         </p>
                     </a>
                 </div>
+                <div class="toggle-btn">
+					<span class="toggle-btn__line toggle-btn__top"></span>
+					<span class="toggle-btn__line toggle-btn__middle"></span>
+					<span class="toggle-btn__line toggle-btn__bottom"></span>
+				</div>
                 <ul class="top-menu">
                     <li class="top-menu__item"><a href="#home" class="top-menu__link">home</a></li>
                     <li class="top-menu__item"><a href="#about" class="top-menu__link">about</a></li>
@@ -49,9 +56,18 @@
                     <!--<li class="top-menu__item"><a href="#feedback" class="top-menu__link">feedback</a></li>-->
                 </ul>
             </nav>
+            
             <div class="top-title">
                 <h1 class="top-title__text">hello, i'm yevhenii sirman</h1>
             </div>
+            
+            <div class="scroll">
+				<div class="scroll-wrap">
+					<i class="scroll-icon fas fa-chevron-down"></i>
+					<i class="scroll-icon scroll-icon--2 fas fa-chevron-down"></i>
+					<i class="scroll-icon scroll-icon--3 fas fa-chevron-down"></i>
+				</div>
+			</div>
         </header>
         
         <!--<aside></aside>-->
@@ -165,13 +181,13 @@
     
                 <nav class="social">
                     <ul class="social-list">
-                        <li class="social-list__item"><a href="" class="social-list__link"><img src="img/gmail.svg" alt="gmail" class="social-list__icon"></a></li>
-                        <li class="social-list__item"><a href="" class="social-list__link"><img src="img/facebook.svg" alt="facebook" class="social-list__icon"></a></li>
-                        <li class="social-list__item"><a href="" class="social-list__link"><img src="img/github.svg" alt="github" class="social-list__icon"></a></li>
-                        <li class="social-list__item social-list__item--avatar"><img src="img/avatar.svg" alt="avatar" class="social-list__icon"></li>
-                        <li class="social-list__item"><a href="" class="social-list__link"><img src="img/instagram.svg" alt="instagram" class="social-list__icon"></a></li>
-                        <li class="social-list__item"><a href="" class="social-list__link"><img src="img/linkedin.svg" alt="linkedin" class="social-list__icon"></a></li>
-                        <li class="social-list__item"><a href="" class="social-list__link"><img src="img/skype.svg" alt="skype" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--gmail"><a href="" class="social-list__link"><img src="img/gmail.svg" alt="gmail" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--facebook"><a href="" class="social-list__link"><img src="img/facebook.svg" alt="facebook" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--github"><a href="" class="social-list__link"><img src="img/github.svg" alt="github" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--avatar"><img src="img/avatar.svg" alt="avatar" class="social-list__icon"></li>
+                        <li class="social-list__item item--instagram"><a href="" class="social-list__link"><img src="img/instagram.svg" alt="instagram" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--linkedin"><a href="" class="social-list__link"><img src="img/linkedin.svg" alt="linkedin" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--skype"><a href="" class="social-list__link"><img src="img/skype.svg" alt="skype" class="social-list__icon"></a></li>
                     </ul>
                 </nav>
     
@@ -212,7 +228,7 @@
             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.118242645926!2d24.02128351555989!3d49.84023573902554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71905ea20d%3A0x37917dc5c200c42c!2z0LLRg9C70LjRhtGPINCi0LDQtNC10YPRiNCwINCa0L7RgdGC0Y7RiNC60LAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1530024055575" width="600" height="450" style="border:0" allowfullscreen></iframe>
             
             <nav class="footer-nav">
-                <a class="license" href="#"><span>Design and code by SirmanYevhenii © 2018</span></a>
+                <a class="license" href="#"><p>Design and code by SirmanYevhenii © 2018</p></a>
                 <ul class="top-menu top-menu--footer">
                     <li class="top-menu__item"><a href="#home" class="top-menu__link">home</a></li>
                     <li class="top-menu__item"><a href="#about" class="top-menu__link">about</a></li>
@@ -222,5 +238,9 @@
             </nav>
         </footer>
     </div>
+    
+    
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
