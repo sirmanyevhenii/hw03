@@ -1,7 +1,5 @@
 console.log('Hello, I wish you a good day');
 
-
-// open menu
 $('.toggle-btn').click(function() {
 	$('.top-menu').toggleClass('top-menu--active');
 	$('.toggle-btn__top').toggleClass('toggle-btn__top--active');

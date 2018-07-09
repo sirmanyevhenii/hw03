@@ -26,7 +26,6 @@
 
 	<!-- Style -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/index.css">
 
 </head>
@@ -53,7 +52,6 @@
                     <li class="top-menu__item"><a href="#home" class="top-menu__link">home</a></li>
                     <li class="top-menu__item"><a href="#about" class="top-menu__link">about</a></li>
                     <li class="top-menu__item"><a href="#contact" class="top-menu__link">contact</a></li>
-                    <!--<li class="top-menu__item"><a href="#feedback" class="top-menu__link">feedback</a></li>-->
                 </ul>
             </nav>
             
@@ -69,8 +67,6 @@
 				</div>
 			</div>
         </header>
-        
-        <!--<aside></aside>-->
     
         <main class="main">
             <section id="about" class="about">
@@ -191,38 +187,19 @@
                     </ul>
                 </nav>
     
-                <form class="form" action="https://formspree.io/sirmanj92@gmail.com" method="POST">
-                    <fieldset class="form__fieldset">
-                        <legend class="form__title">text me</legend>
-                        <label class="form__label" for="input-name">Your name</label>
-                        <input id="input-name" class="form__input" type="text" name="name" placeholder="Your name">
-                        <label class="form__label" for="input-email">Your email</label>
-                        <input id="input-email" class="form__input" type="email" name="email" placeholder="Your email">
-                        <label for="message">Text here</label>
-                        <textarea id="message" class="form__input" name="message" rows="5" placeholder="Text here"></textarea>
-                    </fieldset>
-                    <input type="submit" value="Send">
+                <form class="contact-form">
+                    <h3 class="contact-form__title">text me</h3>
+                    <label class="contact-form__label" for="input-name">Your name</label>
+                    <input id="input-name" class="contact-form__input" type="text" name="name" placeholder="Your name" required>
+                    <label class="contact-form__label" for="input-email">Your email</label>
+                    <input id="input-email" class="contact-form__input" type="email" name="email" placeholder="Your email" required>
+                    <label for="message">Text here</label>
+                    <textarea id="message" class="contact-form__input" name="message" rows="5" placeholder="Text here" required></textarea>
+                    <input class="contact-form__input contact-form__submit" type="submit" value="Send">
                 </form> 
-                
-                <form class="form feedback-form" action="https://formspree.io/sirmanj92@gmail.com" method="POST">
-                    <fieldset class="feedback-form__fieldset">
-                        <legend class="form__title">anonim feedback</legend>
-                        <label>
-                            <input type="radio" name="feedback"/>
-                        </label>
-                        <label>
-                            <input type="radio" name="feedback"/>
-                        </label>
-                        <label>
-                            <textarea name="feedback-message" cols="30" rows="10"></textarea>
-                        </label>
-                    </fieldset>
-                    <input type="submit" value="Send">
-                </form> 
+
             </section>
         </main>
-        
-        <!--<aside></aside>-->
     
         <footer class="main-footer">
             <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.118242645926!2d24.02128351555989!3d49.84023573902554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add71905ea20d%3A0x37917dc5c200c42c!2z0LLRg9C70LjRhtGPINCi0LDQtNC10YPRiNCwINCa0L7RgdGC0Y7RiNC60LAsINCb0YzQstGW0LIsINCb0YzQstGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNzkwMDA!5e0!3m2!1suk!2sua!4v1530024055575" width="600" height="450" style="border:0" allowfullscreen></iframe>
@@ -233,7 +210,6 @@
                     <li class="top-menu__item"><a href="#home" class="top-menu__link">home</a></li>
                     <li class="top-menu__item"><a href="#about" class="top-menu__link">about</a></li>
                     <li class="top-menu__item"><a href="#contact" class="top-menu__link">contact</a></li>
-                    <!--<li class="top-menu__item"><a href="#feedback" class="top-menu__link">feedback</a></li>-->
                 </ul>
             </nav>
         </footer>
@@ -241,6 +217,11 @@
     
     
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/index-form.js"></script>
+    <script src="js/index.js"></script>
+    
+    
+    
+    
 </body>
 </html>
