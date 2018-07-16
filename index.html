@@ -20,7 +20,7 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
 	<link rel="manifest" href="favicons/site.webmanifest">
 	<link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#5bbad5">
-	
+
 	<meta name="Description" content="Yevhenii Sirman | FrontEnd developer, lviv">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
@@ -37,7 +37,7 @@
             <nav class="top-nav">
                 <div class="logo">
                     <a class="logo__link" href="#home">
-                        <img class="logo__img" src="img/logo.png" alt="">
+                        <img class="logo__img" src="img/logo.png" alt="logo СЄ">
                         <p class="logo__name">
                             <span class="logo__text">sirman</span>
                             <span class="logo__text logo__text--row-2">yevhenii</span>
@@ -50,9 +50,10 @@
 					<span class="toggle-btn__line toggle-btn__bottom"></span>
 				</div>
                 <ul class="top-menu">
-                    <li class="top-menu__item"><a href="#home" class="top-menu__link smooth">home</a></li>
-                    <li class="top-menu__item"><a href="#about" class="top-menu__link smooth">about</a></li>
-                    <li class="top-menu__item"><a href="#contact" class="top-menu__link smooth">contact</a></li>
+                    <li class="top-menu__item item"><a href="#home" class="top-menu__link smooth">home</a></li>
+                    <li class="top-menu__item item"><a href="#about" class="top-menu__link smooth">about</a></li>
+                    <li class="top-menu__item item"><a href="#skills" class="top-menu__link smooth">skills</a></li>
+                    <li class="top-menu__item item"><a href="#contact" class="top-menu__link smooth">contact</a></li>
                 </ul>
             </nav>
             
@@ -61,11 +62,11 @@
             </div>
             
             <div class="scroll">
-				<div class="scroll-wrap">
+				<a href="#about" class="scroll-wrap smooth">
 					<i class="scroll-icon fas fa-chevron-down"></i>
 					<i class="scroll-icon scroll-icon--2 fas fa-chevron-down"></i>
 					<i class="scroll-icon scroll-icon--3 fas fa-chevron-down"></i>
-				</div>
+				</a>
 			</div>
         </header>
     
@@ -80,7 +81,7 @@
                 
                 <div class="avatar">
                     <h3 class="avatar__title">foto</h3>
-                    <img src="img/avatar.jpeg" alt="foto-avatar" class="avatar__foto">
+                    <img src="img/avatar.jpeg" alt="avatar foto" class="avatar__foto">
                 </div>
     
                 <div class="about-text">
@@ -103,7 +104,7 @@
                 </div>
                 
                 <div class="about-skills">
-					<h3 class="about-skills__title">know</h3>
+					<h3 id="skills" class="about-skills__title">know</h3>
 					<div class="skills">
 						<figure class="skills__artikle">
 							<img src="img/html-icon.svg" alt="html" class="skills__img">
@@ -173,32 +174,31 @@
                     <div class="caption">
                         <span class="caption__top">contact</span>
                         <h2 class="caption__main">get in touch<br>with me</h2>
-                        <!--<h2 class="caption__main">with me</h2>-->
                     </div>
                 </header>
     
                 <nav class="social">
                     <ul class="social-list">
-                        <li class="social-list__item item--gmail"><a href="tg://resolve?domain=sirmanyevhenii" class="social-list__link"><img src="img/gmail.svg" alt="gmail" class="social-list__icon"></a></li>
-                        <li class="social-list__item item--facebook"><a href="https://www.facebook.com/SirmanYevhenii" class="social-list__link" target="_blank"><img src="img/facebook.svg" alt="facebook" class="social-list__icon"></a></li>
-                        <li class="social-list__item item--github"><a href="https://github.com/sirmanyevhenii" class="social-list__link" target="_blank"><img src="img/github.svg" alt="github" class="social-list__icon"></a></li>
-                        <li class="social-list__item item--avatar"><img src="img/avatar.svg" alt="avatar" class="social-list__icon"></li>
-                        <li class="social-list__item item--instagram"><a href="https://www.instagram.com/sirmanyevhenii/" class="social-list__link" target="_blank"><img src="img/instagram.svg" alt="instagram" class="social-list__icon"></a></li>
-                        <li class="social-list__item item--linkedin"><a href="https://www.linkedin.com/in/yevhenii-sirman-ba44a4141/" class="social-list__link" target="_blank"><img src="img/linkedin.svg" alt="linkedin" class="social-list__icon"></a></li>
-                        <li class="social-list__item item--skype"><a href="skype:sirmanj92?chat" class="social-list__link" target="_blank"><img src="img/skype.svg" alt="skype" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--gmail item"><a href="tg://resolve?domain=sirmanyevhenii" class="social-list__link"><img src="img/gmail.svg" alt="gmail" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--facebook item"><a href="https://www.facebook.com/SirmanYevhenii" class="social-list__link" target="_blank"><img src="img/facebook.svg" alt="facebook" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--github item"><a href="https://github.com/sirmanyevhenii" class="social-list__link" target="_blank"><img src="img/github.svg" alt="github" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--avatar item"><img src="img/avatar.svg" alt="avatar" class="social-list__icon"></li>
+                        <li class="social-list__item item--instagram item"><a href="https://www.instagram.com/sirmanyevhenii/" class="social-list__link" target="_blank"><img src="img/instagram.svg" alt="instagram" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--linkedin item"><a href="https://www.linkedin.com/in/yevhenii-sirman-ba44a4141/" class="social-list__link" target="_blank"><img src="img/linkedin.svg" alt="linkedin" class="social-list__icon"></a></li>
+                        <li class="social-list__item item--skype item"><a href="skype:sirmanj92?chat" class="social-list__link" target="_blank"><img src="img/skype.svg" alt="skype" class="social-list__icon"></a></li>
                     </ul>
                 </nav>
     
-                <form class="contact-form">
-                    <h3 class="contact-form__title">text me</h3>
-                    <label class="contact-form__label" for="input-name">Your name</label>
-                    <input id="input-name" class="contact-form__input" type="text" name="name" placeholder="Your name" required>
-                    <label class="contact-form__label" for="input-email">Your email</label>
-                    <input id="input-email" class="contact-form__input" type="email" name="email" placeholder="Your email" required>
+                <form class="contact-form form" action="https://formspree.io/sirmanj92@gmail.com" method="POST" target="_blank">
+                    <h3 class="form__title">text me</h3>
+                    <label class="form__label" for="input-name">Your name</label>
+                    <input id="input-name" class="form__input" type="text" name="name" autocomplete="name" placeholder="Your name" required>
+                    <label class="form__label" for="input-email">Your email</label>
+                    <input id="input-email" class="form__input" type="email" name="email" autocomplete="email" placeholder="Your email" required>
                     <label for="message">Text here</label>
-                    <textarea id="message" class="contact-form__input" name="message" rows="5" placeholder="Text here" required></textarea>
-                    <input class="contact-form__input contact-form__submit" type="submit" value="Send">
-                </form> 
+                    <textarea id="message" class="form__input" name="message" rows="5" placeholder="Text here" required></textarea>
+                    <input class="form__input form__submit" type="submit" value="Send">
+                </form>
 
             </section>
         </main>
@@ -209,9 +209,10 @@
             <nav class="footer-nav">
                 <a class="license" href="#"><p>Design and code by SirmanYevhenii © 2018</p></a>
                 <ul class="top-menu top-menu--footer">
-                    <li class="top-menu__item"><a href="#home" class="top-menu__link">home</a></li>
-                    <li class="top-menu__item"><a href="#about" class="top-menu__link">about</a></li>
-                    <li class="top-menu__item"><a href="#contact" class="top-menu__link">contact</a></li>
+                    <li class="top-menu__item item"><a href="#home" class="top-menu__link smooth">home</a></li>
+                    <li class="top-menu__item item"><a href="#about" class="top-menu__link smooth">about</a></li>
+                    <li class="top-menu__item item"><a href="#skills" class="top-menu__link smooth">skills</a></li>
+                    <li class="top-menu__item item"><a href="#contact" class="top-menu__link smooth">contact</a></li>
                 </ul>
             </nav>
         </footer>
@@ -219,10 +220,8 @@
     
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/index-form.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/index.js"></script>
-    
-    
     
 </body>
 </html>

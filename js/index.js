@@ -1,6 +1,3 @@
-console.log('Hello, I wish you a good day');
-
-
 // burger menu
 $('.toggle-btn').click(function() {
 	$('.top-menu').toggleClass('top-menu--active');
@@ -14,16 +11,15 @@ $(document).click(function(event) {
 	event.stopPropagation();
 });
 
-
 // scroll
 $(function() {
     $('.smooth').on('click', function(event) {
-        var target = $(this.getAttribute('href'));
+        let target = $(this.getAttribute('href'));
         if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
                 scrollTop: target.offset().top
-            }, 1500);
+            }, 750);
         }
     });
 });

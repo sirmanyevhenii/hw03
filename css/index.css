@@ -5,8 +5,8 @@
 
 :root {
     font-family: 'Nunito', sans-serif;
-    --maroon: #800000;
-    --white: #fff;
+    --main-color: #800000;
+    --stand-out-color: #fff;
 }
 
 body {
@@ -24,14 +24,15 @@ h1, h2, h3 {
     text-align: center;
 }
 
-li {
-    list-style-type: none;
-}
-
 ul {
     margin: 0;
     padding: 0;
 }
+
+.item {
+    list-style-type: none;
+}
+
 
 /*HEADER*/
 
@@ -44,6 +45,7 @@ ul {
     padding: 1rem;
     min-height: 98vh;
     background-image: url(../img/header-bg.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
 }
@@ -81,7 +83,7 @@ ul {
 
 .logo__text--row-2 {
     padding-left: 5px;
-    color: var(--maroon);
+    color: var(--main-color);
 }
 
 /*toggl for menu*/
@@ -89,7 +91,7 @@ ul {
 .toggle-btn {
     display: none;
 	position: fixed;
-	z-index: 100;
+	z-index: 3;
 	right: 1rem;
 	padding: 0.75rem;
 	cursor: pointer;
@@ -139,7 +141,7 @@ ul {
 .top-menu__link {
     padding: 0.5rem 0;
     width: 7rem;
-    color: var(--maroon);
+    color: var(--main-color);
     text-transform: uppercase;
     transition: all 1s;
 }
@@ -215,7 +217,7 @@ ul {
 .top-title {
     /*align-self: center;*/
     width: 100%;
-    color: var(--maroon);
+    color: var(--main-color);
 }
 
 /*scroll*/
@@ -225,11 +227,15 @@ ul {
 }
 
 .scroll-wrap {
+    display: block;
+    padding: 0.5rem;
 	width: 1rem;
 	margin: 0 auto;
 }
 
 .scroll-icon {
+    /*color: var(--stand-out-color);*/
+    color: black;
 	opacity: 0.2;
 }
 
@@ -273,7 +279,7 @@ ul {
     display: inline-block;
     margin-left: 50%;
     padding: 0.5rem 0 0.5rem 1rem;
-    border-left: 3px solid var(--maroon);;
+    border-left: 3px solid var(--main-color);;
 }
 
 .caption__top {
@@ -316,7 +322,7 @@ ul {
 
 .my-skills {
     width: 3rem;
-    background-color: var(--maroon);
+    background-color: var(--main-color);
     border-radius: 50px;
 }
 
@@ -337,7 +343,7 @@ ul {
 .skills__img {
     width: 4rem;
     border-radius: 50px;
-    background-color: var(--maroon);
+    background-color: var(--main-color);
 }
 
 
@@ -365,7 +371,7 @@ ul {
     width: 290px;
     height: 290px;
     box-sizing: border-box;
-    border: 2px solid var(--maroon);
+    border: 2px solid var(--main-color);
     border-radius: 50rem;
 }
 
@@ -388,7 +394,7 @@ ul {
     display: inline-block;
     height: 1rem;
     width: 2px;
-    background-color: var(--maroon);
+    background-color: var(--main-color);
 }
 
 .item--gmail {
@@ -478,30 +484,30 @@ ul {
 
 /*main form*/
 
-.contact-form {
+.form {
     padding: 1rem;
     width: 25rem;
-    border: 2px solid var(--maroon);
+    border: 2px solid var(--main-color);
 }
 
-.contact-form__title {
+.form__title {
     text-transform: uppercase;
     text-align: center;
     margin: 0 auto;
 }
 
-.contact-form__input {
+.form__input {
     display: block;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     width: 100%;
     color: black;
     box-sizing: border-box;
-    border: 1px solid var(--maroon);
+    border: 1px solid var(--main-color);
 }
 
 
-.contact-form__submit {
+.form__submit {
     display: block;
     margin: auto;
     padding: 0.5rem 2rem;
@@ -509,16 +515,15 @@ ul {
     background-color: inherit;
     text-transform: uppercase;
     font-size: 1rem;
-    color: var(--maroon);
+    color: var(--main-color);
     transition: all 1s;
 }
 
-.contact-form__submit:hover {
-    background-color: var(--maroon);
-    color: var(--white);
+.form__submit:hover {
+    background-color: var(--main-color);
+    color: var(--stand-out-color);
     transition: all 1s;
 }
-
 
 
 /*FOOTER*/
@@ -538,11 +543,11 @@ ul {
 }
 
 .license {
-    color: var(--white);
+    color: var(--stand-out-color);
 }
 
 .top-menu--footer a {
-    color: var(--white);
+    color: var(--stand-out-color);
 }
 
 
@@ -579,13 +584,13 @@ ul {
     .top-menu__link {
         display: block;
         width: 100%;
-        color: var(--white);
+        color: var(--stand-out-color);
         font-size: 2rem;
         font-weight: 600;
     }
     
     .top-menu__link:hover {
-        background-color: var(--white);
+        background-color: var(--stand-out-color);
         color: #222;
     }
     
@@ -605,9 +610,19 @@ ul {
         width: 3.5rem;
     }
     
+    .feedback-modal--active {
+        left: calc(50% - 10rem);
+        box-sizing: border-box;
+        width: 20rem;
+    }
+    
     .license {
         width: 100%;
         text-align: center;
+    }
+    
+    .top-menu--footer {
+        display: none;
     }
 }
 
